@@ -1,0 +1,174 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6; /* Світло-сірий фон */
+    color: #333;
+}
+
+/* Шапка сайту */
+header {
+    background: url('header-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    background-color: rgba(0, 77, 153, 0.8); /* Напівпрозорий фон */
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Меню навігації */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 89, 179, 0.8);
+    border-radius: 5px;
+}
+
+/* Основні секції */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Білий фон секцій */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Адміністрація, комісії та навчальна частина */
+.administration, .commissions, .education {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-left: 5px solid #0073e6;
+}
+
+h2 {
+    color: #004d99;
+}
+
+/* Галерея */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+}
+
+.photo {
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+/* Кнопки */
+.back-button {
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.back-button:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.5);
+}
+
+.back-button:active {
+    transform: scale(0.95);
+}
+
+/* Секція новин */
+.news {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.news h2 {
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+/* Багатоблочна структура новин */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Блок новини */
+.news-block {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.news-block:hover {
+    transform: scale(1.02);
+    background-color: #e0e0e0;
+}
+
+.news-block h3 {
+    color: #0073e6;
+    margin-bottom: 10px;
+}
+
+/* Підвал сайту */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #cccccc;
+    color: #222;
+    margin-top: 20px;
+}

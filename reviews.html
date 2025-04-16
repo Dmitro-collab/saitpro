@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відгуки</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Відгуки студентів</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про коледж</a></li>
+                <li><a href="specialties.html">Спеціальності</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="reviews">
+        <h2>Залиште свій відгук</h2>
+        <p class="info-text">Нам важливо почути вашу думку! Ми уважно розглядаємо всі відгуки та стараємося вчасно відповісти, щоб покращити умови навчання та освітній процес.</p>
+
+        <form action="mailto:androshchukdima994@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ваш відгук:</label>
+            <textarea id="message" name="message" placeholder="Напишіть ваш відгук..." required></textarea>
+
+            <button type="submit">Надіслати</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Рівненський ЕТФК | Всі права захищені</p>
+    </footer>
+</body>
+</html>
